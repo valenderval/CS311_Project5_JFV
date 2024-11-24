@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Val's Mad Libs</title>
+        <link rel="stylesheet" href="properties.css" />
+    
+    </head>
+
+    <body>
+
+        <div id="photoContainer" class = "photo">
+            <div id="photo1" class="photo"><img src="img\treasure.jpg" alt="treasure"></div>
+            <div id="photo2" class="photo" style="display: none;" ><img src="img\cutecat.jpg" alt="cute cat"></div>
+           
+        </div>
+
+        <div id="container" class="container">
+            <h1> MAD LIBS </h1>
+            <h2>FILL IN THE BLANKS!</h2>
+            <input type="text" id="adjective" placeholder="Adjective">
+            <input type="text" id="name" placeholder="Name">
+            <input type="text" id="adverb" placeholder="Adverb">
+            <input type="text" id="noun" placeholder="Noun">
+            <input type="text" id="noun2" placeholder="Noun">
+            <input type="text" id="adjective2" placeholder="Adjective (ending in er)">
+            <input type="text" id="sillyJob" placeholder="Silly Job">
+            <input type="text" id="sillyPlace" placeholder="Silly Place">
+            <input type="text" id="emotion" placeholder="Emotion">
+            <input type="text" id="location" placeholder="Location">
+
+            <button onclick="submit()">Create Your Mad Lib!</button>
+            <button onclick="reset()">Reset</button>
+       
+        </div> <!--End Container-->
+
+        <div id="madlib-complete" class="container" style="display: none;">
+            <h1>Mad Lib!</h1>
+            <p id="story"></p>
+            <button onclick="reset()">Reset</button>
+        </div>
+
+        <script src="js/properties.js"></script>
+    </body>
+</html>
